@@ -1,4 +1,5 @@
 # Proyecto Final Bootcamp CILSA
+#### Tecnologías: React.js - Node.js/Express.js
 Aplicación web para gestionar una lista de tareas (SPA). Los usuarios podrán agregar nuevas tareas, marcar tareas como completadas, editar tareas existentes y eliminar tareas. <br>
 La aplicación cuenta con una interfaz intuitiva y fácil de usar.
 Los usuarios deben registrarse e iniciar sesión para comenzar a crear tareas. 
