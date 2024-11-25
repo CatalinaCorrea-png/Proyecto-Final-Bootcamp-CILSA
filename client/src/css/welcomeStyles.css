@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900");
+
+:root {
+  --black: #080705ff;
+  --charcoal: #40434eff;
+  --wine: #702632ff;
+  --cordovan: #912f40ff;
+  --baby-powder: #fffffaff;
+}
+
+/* Personalizar el ancho y colores del scroll */
+html {
+  scrollbar-width: auto; /* Scroll delgado en Firefox */
+  scrollbar-color: var(--wine) var(--black); /* Color del thumb y el track */
+  scroll-behavior: smooth;
+}
+
+/* Scroll en navegadores basados en Webkit (Chrome, Edge, Safari) */
+html::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll */
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--black); /* Color del fondo del track */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--cordovan); /* Color del scroll */
+  border-radius: 15px; /* Bordes redondeados */
+  border: 2px solid #f1f1f1; /* Borde para separarlo del track */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cordovan); /* Color cuando el usuario pasa el mouse */
+}
+
+.header {
+  background-color: var(--black);
+  .logo-inicio {
+    color: var(--baby-powder);
+    &:hover {
+      color: var(--cordovan);
+    }
+  }
+  .logo {
+    height: 75px;
+    width: 75px;
+    box-sizing: border-box;
+  }
+  .nav-link {
+    color: var(--baby-powder);
+    border-radius: 10px;
+    &:hover {
+      color: var(--baby-powder);
+      background-color: var(--wine);
+    }
+  }
+  .boton-nav {
+    background-color: var(--wine);
+  }
+}
+.main {
+  margin: 0;
+  background-color: var(--baby-powder);
+  height: 94.5vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  background-image: url("../../img/Fondo-rojo.svg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  transition: 0.5s;
+}
+.cartel {
+  background-color: #ffffffaa;
+  color: var(--wine);
+  box-shadow: var(--wine) 0 0 15px;
+  border-radius: 20px;
+  padding: 20px 60px;
+}
+.bienvenido {
+  font-size: 5rem;
+  transition: 1s;
+}
+.info-item {
+  font-size: 3rem;
+  transition: 1s;
+}
+.info-item-link {
+  font-size: 2rem;
+  transition: 1s;
+}
+.link-inicio {
+  color: var(--wine);
+  &:hover {
+    color: var(--charcoal);
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .imagen {
+    transition: 0.5s;
+  }
+  .cartel {
+    padding: 20px 20px;
+    transition: 1s;
+
+    .bienvenido {
+      font-size: 3rem;
+      transition: 1s;
+    }
+    .info-item {
+      font-size: 1.5rem;
+      transition: 1s;
+    }
+    .info-item-link {
+      font-size: 1.5rem;
+      transition: 1s;
+    }
+  }
+}
